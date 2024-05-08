@@ -25,8 +25,8 @@ class Game:
 
     def start(self):
         print("The battle of heroes begins!")
-        #turn = 0  # Игрок начинает первым
-        turn = random.randint(0, 1) # random choice begin player
+        # turn = 0  # Игрок начинает первым
+        turn = random.randint(0, 1)  # random choice begin player
 
         while self.player.is_alive() and self.computer.is_alive():
             if turn % 2 == 0:
